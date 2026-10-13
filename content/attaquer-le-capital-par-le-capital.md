@@ -6,7 +6,7 @@ Si la propriété du capital donne du pouvoir, alors les citoyens peuvent cherch
 
 ## L’idée centrale
 
-Au lieu de dépendre uniquement de la bonne volonté des détenteurs de capitaux, ou d’attendre que chaque problème soit résolu par une décision politique, les citoyens pourraient organiser leur propre capacité d’investissement.
+Au lieu de dépendre uniquement de la bonne volonté des détenteurs de capitaux, ou d’attendre que chaque problème soit résolu par une décision politique, les citoyens pourraient organiser leur propre capacité d’investissement. Utiliser le capitalisme contre lui-même : face aux hydres individualistes qui concentrent le pouvoir, constituer une force de capital contrôlée par le peuple.
 
 Le projet ne reposerait pas sur la recherche de profits personnels. Il reposerait sur la constitution d’un patrimoine collectif durable.
 

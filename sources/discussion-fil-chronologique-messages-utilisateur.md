@@ -36,3 +36,11 @@ Note: chronologie reconstituée à partir des messages utilisateur visibles dans
 13. tu peux maintenant réexpliquer les idées de façon plus approfondie, en donnant des pistes, etc. [...] objectif humanitaire et pas individualisme.
 
 14. What should the AI hosts focus on in this episode?
+
+## Orientation du site — préceptes majeurs
+
+15. Ajouter des préceptes majeurs à l’orientation du site :
+
+- Ça ne sert à rien de commencer par une transformation politique : la politique est déjà aux mains du capital ; l’État est endetté, donc annexé / obligé de plier le genou au capital (sa dette ne lui appartient pas). C’est avant tout un combat. Si le capital est un karatéka, la société entière doit apprendre le karaté et l’affronter sur le tatami.
+- Sur la notion de révolution : chaque année les riches sont plus riches ; le capital n’a jamais autant gagné (2025–2027). Les révolutions contre le capital n’ont jamais réellement fonctionné (elles ont amélioré la vie humaine, mais le capital continue de gagner).
+- Noblesse du capital : 1789 a abattu la noblesse de forme, pas de fonction ; aujourd’hui l’ultra-riche hérite à la naissance d’un pouvoir comparable (contrôler États et peuples). Les classes sociales n’ont pas disparu. Logique que cette révolution naisse en France. Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même — constituer un monstre du capital contrôlé par le peuple face aux hydres individualistes.

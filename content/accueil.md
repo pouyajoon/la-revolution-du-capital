@@ -1,6 +1,6 @@
 # La révolution du capital
 
-Temps de lecture : ~4 min
+Temps de lecture : ~6 min
 
 ## Thèse
 
@@ -9,6 +9,14 @@ Le pouvoir économique est aujourd’hui concentré. Les citoyens votent, mais i
 ## Orientation
 
 Il ne s’agit pas d’enrichir une nouvelle classe d’actionnaires. Il s’agit d’attaquer le capital par le capital : acquérir progressivement des participations — surtout dans des secteurs stratégiques — réinvestir les dividendes, exercer des droits de vote, et remettre une part du pouvoir économique entre les mains d’une organisation démocratique, transparente, mondiale dans son ambition.
+
+## Préceptes majeurs
+
+1. **Pas de transformation politique d’abord** — L’État endetté ploie déjà face au capital ; sa dette ne lui appartient pas. Si le capital est un karatéka, la société doit apprendre le karaté et l’affronter sur le tatami.
+2. **Les révolutions passées n’ont pas vaincu le capital** — Chaque année, la concentration des richesses s’aggrave. Améliorer la vie humaine n’équivaut pas à avoir vaincu le capital.
+3. **Abattre la noblesse du capital** — 1789 a changé la forme de la noblesse, pas sa fonction sociale. L’héritier ultra-riche naît avec un pouvoir comparable. La France a déjà combattu une noblesse ; elle peut concevoir le système qui affronte celle d’aujourd’hui.
+
+Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même — face aux hydres individualistes, un monstre du capital contrôlé par le peuple.
 
 ## Démarches
 
@@ -25,6 +33,7 @@ Textes indépendants, avec leur propre temps de lecture :
 
 - [Le capital n’est pas seulement de l’argent](../chapitres/le-capital-nest-pas-seulement-de-largent.html) (~5 min)
 - [Pourquoi le vote ne suffit pas](../chapitres/pourquoi-le-vote-ne-suffit-pas.html) (~5 min)
+- [Trois préceptes majeurs](../chapitres/trois-preceptes-majeurs.html) (~8 min)
 - [Attaquer le capital par le capital](../chapitres/attaquer-le-capital-par-le-capital.html) (~7 min)
 - [Financer un patrimoine citoyen](../chapitres/financer-un-patrimoine-citoyen.html) (~6 min)
 - [Entreprises stratégiques et pouvoir de décision](../chapitres/entreprises-strategiques-et-pouvoir-de-decision.html) (~6 min)
