@@ -2,8 +2,8 @@
   "name": "la-revolution-du-capital",
   "private": true,
   "scripts": {
-    "start": "serve . -l 3000",
-    "dev": "serve . -l 3000"
+    "start": "serve . -l 8080",
+    "dev": "serve . -l 8080"
   },
   "devDependencies": {
     "serve": "^14.2.4"

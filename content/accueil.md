@@ -19,14 +19,14 @@ Il ne s’agit pas d’enrichir une nouvelle classe d’actionnaires. Il s’agi
 5. **Garde-fous** — Une personne, une voix ; transparence ; patrimoine inaliénable au profit du collectif.
 6. **Horizon** — Contre-pouvoir économique d’abord ; capacité politique renforcée ensuite.
 
-## Chapitres à venir
+## Chapitres
 
-Ces sujets seront développés dans des textes indépendants, avec leur propre temps de lecture :
+Textes indépendants, avec leur propre temps de lecture :
 
-- Le capital n’est pas seulement de l’argent
-- Pourquoi le vote ne suffit pas
-- Attaquer le capital par le capital
-- Financer un patrimoine citoyen
-- Entreprises stratégiques et pouvoir de décision
-- Gouvernance : transparence, démocratie, échelle mondiale
-- Objections, risques et conditions de réussite
+- [Le capital n’est pas seulement de l’argent](../chapitres/le-capital-nest-pas-seulement-de-largent.html) (~5 min)
+- [Pourquoi le vote ne suffit pas](../chapitres/pourquoi-le-vote-ne-suffit-pas.html) (~5 min)
+- [Attaquer le capital par le capital](../chapitres/attaquer-le-capital-par-le-capital.html) (~7 min)
+- [Financer un patrimoine citoyen](../chapitres/financer-un-patrimoine-citoyen.html) (~6 min)
+- [Entreprises stratégiques et pouvoir de décision](../chapitres/entreprises-strategiques-et-pouvoir-de-decision.html) (~6 min)
+- [Gouvernance, transparence, échelle mondiale](../chapitres/gouvernance-transparence-echelle-mondiale.html) (~7 min)
+- [Objections, risques et conditions de réussite](../chapitres/objections-risques-et-conditions-de-reussite.html) (~8 min)
