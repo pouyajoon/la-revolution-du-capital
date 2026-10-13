@@ -34,4 +34,4 @@ Dans ce cadre, la révolution du capital n’est pas une invitation à brûler o
 
 On parle souvent d’hydres : de grandes entreprises capitales qui absorbent, concentrent, dévorent. L’idée est inverse et claire : constituer un monstre du capital contrôlé par le peuple — une force collective de propriété et de décision — pour combattre les individualistes qui concentrent seuls le pouvoir.
 
-Combat sur le tatami. Lucidité sur l’échec relatif des révolutions passées. Mémoire de 1789 face à la noblesse du capital. Puis seulement : construire.
+Combat sur le tatami. Lucidité sur l’échec relatif des révolutions passées. Mémoire de 1789 face à la noblesse du capital. Puis seulement : construire — avant la bascule vers un capitalisme qui n’a plus besoin des humains.

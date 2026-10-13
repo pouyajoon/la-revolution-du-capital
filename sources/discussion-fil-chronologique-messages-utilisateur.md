@@ -44,3 +44,11 @@ Note: chronologie reconstituée à partir des messages utilisateur visibles dans
 - Ça ne sert à rien de commencer par une transformation politique : la politique est déjà aux mains du capital ; l’État est endetté, donc annexé / obligé de plier le genou au capital (sa dette ne lui appartient pas). C’est avant tout un combat. Si le capital est un karatéka, la société entière doit apprendre le karaté et l’affronter sur le tatami.
 - Sur la notion de révolution : chaque année les riches sont plus riches ; le capital n’a jamais autant gagné (2025–2027). Les révolutions contre le capital n’ont jamais réellement fonctionné (elles ont amélioré la vie humaine, mais le capital continue de gagner).
 - Noblesse du capital : 1789 a abattu la noblesse de forme, pas de fonction ; aujourd’hui l’ultra-riche hérite à la naissance d’un pouvoir comparable (contrôler États et peuples). Les classes sociales n’ont pas disparu. Logique que cette révolution naisse en France. Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même — constituer un monstre du capital contrôlé par le peuple face aux hydres individualistes.
+
+16. Présent et futur — du capitalisme des humains au capitalisme des machines :
+
+- Aujourd’hui le capital a besoin d’humains : les faire bosser, leur faire croire qu’ils peuvent atteindre le capital, les pousser à consommer pour récupérer l’argent distribué et le réinjecter dans le capital.
+- Transition : IA / automatisation → enrichissement avec de moins en moins d’humains (10 → 1 → presque zéro).
+- Revenu universel comme fumisterie / soupape : payer les gens pour qu’ils restent tranquilles et consomment, pendant que le capital s’enrichit sans eux ; éviter la révolte après licenciements massifs.
+- Robotique et automatisation de la guerre / répression : gendarmes d’une autre région pour ne pas taper sur des cousins ; demain des machines sans remords. Répressions de masse déjà possibles ; dérives occidentales (ex. concentration du pouvoir aux USA). Si le capital n’a plus besoin des humains, il peut les éliminer (y compris sous prétexte de « sauver la Terre »).
+- D’où l’urgence d’agir maintenant, tant que le peuple a encore une prise.
