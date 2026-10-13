@@ -12,8 +12,8 @@ Textes indépendants du site, dérivés des sources mais centrés sur les idées
 | [la-proposition-concrete.md](./la-proposition-concrete.md) | ~9 min |
 | [attaquer-le-capital-par-le-capital.md](./attaquer-le-capital-par-le-capital.md) | ~7 min |
 | [financer-un-patrimoine-citoyen.md](./financer-un-patrimoine-citoyen.md) | ~6 min |
-| [faisabilite-du-fonds-citoyen.md](./faisabilite-du-fonds-citoyen.md) | ~12 min |
 | [rachat-de-la-dette-et-creation-monetaire.md](./rachat-de-la-dette-et-creation-monetaire.md) | ~8 min |
 | [entreprises-strategiques-et-pouvoir-de-decision.md](./entreprises-strategiques-et-pouvoir-de-decision.md) | ~6 min |
 | [gouvernance-transparence-echelle-mondiale.md](./gouvernance-transparence-echelle-mondiale.md) | ~7 min |
 | [objections-risques-et-conditions-de-reussite.md](./objections-risques-et-conditions-de-reussite.md) | ~8 min |
+| [faisabilite-du-fonds-citoyen.md](./faisabilite-du-fonds-citoyen.md) | ~12 min |

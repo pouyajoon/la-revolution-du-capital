@@ -40,6 +40,6 @@ Mais il ne faut pas confondre croissance du patrimoine et bénéfice garanti. Le
 
 L’enjeu n’est pas d’accumuler pour accumuler. Le patrimoine est un moyen au service d’une finalité sociale. La croissance financière reste subordonnée à la mission humaine et démocratique.
 
-Pour passer de l’illustration arithmétique aux ordres de grandeur sourcés (INSEE, livrets, CAC 40), voir [Faisabilité du fonds citoyen](../chapitres/faisabilite-du-fonds-citoyen.html).
+Les ordres de grandeur sourcés (INSEE, livrets, CAC 40) sont rassemblés dans le dernier chapitre technique : [Faisabilité du fonds citoyen](../chapitres/faisabilite-du-fonds-citoyen.html).
 
 Au-delà des actions, le fonds peut aussi servir à [racheter de la dette publique et prêter aux États](../chapitres/rachat-de-la-dette-et-creation-monetaire.html) à des conditions humaines — pour desserrer l’étau avant de reconquérir la création monétaire.
