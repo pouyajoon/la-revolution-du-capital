@@ -10,7 +10,7 @@ Pourquoi acheter des actions plutôt que demander à l’État de réglementer o
 
 Une organisation citoyenne risque-t-elle de devenir une nouvelle puissance financière opaque ? Oui, ce risque existe. C’est pourquoi la gouvernance, la séparation des pouvoirs, l’audit indépendant et les droits des membres sont des conditions de réussite, non de simples détails administratifs.
 
-Les petites contributions suffiront-elles à influencer les grandes entreprises ? Elles peuvent constituer une base de départ, mais l’influence dépendra du nombre de membres, des montants, des actifs, des alliances et de la stratégie. Mieux vaut des progrès limités et mesurables qu’une ambition spectaculaire sans moyens.
+Les petites contributions suffiront-elles à influencer les grandes entreprises ? Elles peuvent constituer une base de départ, mais l’influence dépendra du nombre de membres, des montants, des actifs, des alliances et de la stratégie. Mieux vaut des progrès limités et mesurables qu’une ambition spectaculaire sans moyens. Sur la séquence — accumuler d’abord, n’orienter qu’avec une force réelle — voir [Accumuler d’abord, orienter ensuite](../chapitres/accumuler-dabord-orienter-ensuite.html).
 
 Si l’organisation cherche à peser sur les prix, ne risque-t-elle pas de compromettre les investissements ? Ce risque doit être pris en compte. L’objectif est de favoriser des prix justes et transparents, de prévenir les abus, de protéger les plus vulnérables, tout en garantissant les investissements nécessaires à la continuité du service.
 

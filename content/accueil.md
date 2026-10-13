@@ -48,4 +48,9 @@ Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même
 - [Entreprises stratégiques et pouvoir de décision](../chapitres/entreprises-strategiques-et-pouvoir-de-decision.html) (~6 min)
 - [Gouvernance, transparence, échelle mondiale](../chapitres/gouvernance-transparence-echelle-mondiale.html) (~7 min)
 - [Objections, risques et conditions de réussite](../chapitres/objections-risques-et-conditions-de-reussite.html) (~8 min)
+- [Accumuler d’abord, orienter ensuite](../chapitres/accumuler-dabord-orienter-ensuite.html) (~9 min)
 - [Faisabilité du fonds citoyen (France)](../chapitres/faisabilite-du-fonds-citoyen.html) (~12 min)
+
+## Fabrication
+
+Les idées de ce traité viennent d’une réflexion humaine, souvent dite à voix haute. Une intelligence artificielle a aidé à fabriquer le site et à mettre ces transcriptions sur papier — pas à inventer la thèse.

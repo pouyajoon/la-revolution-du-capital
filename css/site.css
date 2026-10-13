@@ -419,6 +419,15 @@ img {
   border-top: 1px solid var(--line);
 }
 
+.site-footer p + p {
+  margin-top: 0.65rem;
+  padding-top: 0;
+  border-top: none;
+  max-width: 36rem;
+  line-height: 1.5;
+  font-size: 0.78rem;
+}
+
 @media (max-width: 640px) {
   .pager {
     grid-template-columns: 1fr;

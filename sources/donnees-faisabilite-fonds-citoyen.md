@@ -18,6 +18,7 @@ Les montants boursiers fluctuent chaque jour. Les calculs du chapitre sont des *
 | P5 | On calcule d’abord la **collecte brute** (hors frais de structure, fiscalité, slippage, inflation). | Simplification |
 | P6 | Les cibles d’achat sont des **participations partielles** (1 % / 5 %), pas un rachat à 100 %. | Choix méthodologique |
 | P7 | Le premier seuil d’influence réglementaire sur Euronext Paris est **5 %** du capital ou des droits de vote (déclaration AMF). | Droit français |
+| P7b | **5 % ≠ contrôle** : déclaration et visibilité, pas direction stratégique — surtout face à un actionnaire d’État (Engie ≈ 23 % du capital / ~⅓ des droits de vote). | Droit / actionnariat réel |
 | P8 | Un panier « stratégique France » de départ : **TotalEnergies + Engie + Veolia** (énergie / multi-utilities / eau). | Choix illustratif |
 | P9 | Les paliers de cotisation (5 / 10 / 20 / 100 €) sont **proposés**, pas imposés ; calibrés sur les niveaux de vie INSEE. | Hypothèse de projet |
 | P10 | Les livrets A / LDDS sont une **réserve potentielle citoyenne** ; toute réallocation suppose un choix du peuple (liquidité, sécurité, usage social actuel de l’épargne réglementée). | Mise en garde |
@@ -61,6 +62,14 @@ Définition usuelle de « classe moyenne » (souvent D3–D8) : environ **20 980
 | Engie | **58,3 Md€** | idem |
 | Veolia Environnement | **23,2 Md€** | idem |
 | Panier TTE + ENGI + VIE | **≈ 262 Md€** (~11 % du CAC) | Calcul |
+
+### Actionnariat d’État (limite de pouvoir)
+
+| Société | Participation État (ordre de grandeur) | Source |
+|---------|----------------------------------------|--------|
+| Engie | ~22–23 % du capital ; ~⅓ des droits de vote (double voting) | Déclarations APE / AMF (2024–2026) |
+
+Conséquence méthodologique : un objectif de **5 %** mesure la **visibilité réglementaire** et la capacité à peser dans le débat, pas le contrôle stratégique face à l’État actionnaire.
 
 ### Dividendes (référence, non une promesse)
 

@@ -16,4 +16,5 @@ Textes indépendants du site, dérivés des sources mais centrés sur les idées
 | [entreprises-strategiques-et-pouvoir-de-decision.md](./entreprises-strategiques-et-pouvoir-de-decision.md) | ~6 min |
 | [gouvernance-transparence-echelle-mondiale.md](./gouvernance-transparence-echelle-mondiale.md) | ~7 min |
 | [objections-risques-et-conditions-de-reussite.md](./objections-risques-et-conditions-de-reussite.md) | ~8 min |
+| [accumuler-dabord-orienter-ensuite.md](./accumuler-dabord-orienter-ensuite.md) | ~9 min |
 | [faisabilite-du-fonds-citoyen.md](./faisabilite-du-fonds-citoyen.md) | ~12 min |
