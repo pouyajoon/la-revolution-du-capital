@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faisabilité du fonds citoyen (France) — La révolution du capital</title>
+    <meta
+      name="description"
+      content="Ordres de grandeur sourcés : INSEE, livrets A/LDDS, capitalisations CAC 40 — combien de temps pour constituer un fonds citoyen capable d’acheter des participations stratégiques."
+    />
+    <meta property="og:title" content="Faisabilité du fonds citoyen (France)" />
+    <meta
+      property="og:description"
+      content="INSEE, livrets, CAC 40 : calculer si un fonds citoyen français peut peser sur l’énergie et l’eau."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="canonical" href="/chapitres/faisabilite-du-fonds-citoyen.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,550;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <a class="site-header__brand" href="/">La révolution du capital</a>
+        <span class="site-header__meta">Chapitre 12 / 12</span>
+      </div>
+    </header>
+
+    <main>
+      <article class="article article--chapter">
+        <p class="article__meta">
+          <a href="/#chapitres">Tous les chapitres</a>
+          <span aria-hidden="true">·</span>
+          <span>Temps de lecture&nbsp;: 12&nbsp;min</span>
+        </p>
+
+        <h1 class="article__title">Faisabilité du fonds citoyen (France)</h1>
+
+        <p class="lead">
+          Ce chapitre est le dernier des chapitres techniques. Il ne promet rien. Il
+          répond à l’objection «&nbsp;il n’y a pas assez d’argent&nbsp;» avec des ordres de
+          grandeur sourcés&nbsp;: revenus INSEE, encours des livrets, capitalisations du
+          CAC&nbsp;40, et temps nécessaire pour constituer une participation significative.
+        </p>
+
+        <p>
+          Les chiffres sont arrêtés au <strong>13 octobre 2026</strong>. Le détail des
+          sources est dans le
+          <a href="/sources/donnees-faisabilite-fonds-citoyen.md"
+            >fichier de données</a
+          >.
+        </p>
+
+        <h2 id="le-peuple-seul">Le peuple seul face au capital</h2>
+        <p>
+          Le scénario de base n’inclut <strong>aucun</strong> renfort extérieur. Pas de
+          legs de grande fortune. Pas de mécène ultra-riche. Pas de fonds
+          institutionnel, de fonds de retraite, de fonds souverain ni de participation
+          étatique. C’est le combat du <strong>peuple lui-même</strong> contre le capital
+          concentré — avec ce que des millions de personnes peuvent mettre de côté,
+          euro par euro, mois après mois.
+        </p>
+        <p>
+          Cette contrainte n’est pas un oubli&nbsp;: c’est le point à démontrer. Si la
+          faisabilité dépendait d’un milliardaire allié, d’un État ou d’un gros
+          investisseur institutionnel, ce ne serait plus un contre-pouvoir citoyen&nbsp;;
+          ce serait une alliance avec une autre forme de capital.
+        </p>
+        <p>
+          On pourrait, plus tard, <strong>travailler avec</strong> des fonds déjà
+          existants — institutionnels, mutualistes, de retraite — ou en agglomérer
+          certains autour d’une mission commune. Ce serait un levier supplémentaire,
+          éventuellement puissant. Mais les calculs de ce chapitre
+          <strong>n’en tiennent pas compte</strong>. Ils mesurent ce que le peuple peut
+          faire <em>sans eux</em>.
+        </p>
+
+        <h2 id="ce-qu-on-cherche">Ce qu’on cherche à démontrer</h2>
+        <p>
+          Pas qu’un fonds citoyen peut «&nbsp;acheter le CAC&nbsp;40&nbsp;» demain. Qu’avec une
+          fraction réaliste de la population française, et des cotisations modestes
+          calibrées sur les niveaux de vie — <strong>sans fortune ni institution</strong>
+          —, on peut atteindre en quelques années des
+          <strong>participations déclarables</strong> (notamment le seuil de 5&nbsp;%) dans
+          des entreprises stratégiques françaises — énergie, eau, utilities — et
+          constituer une force actionnariale visible.
+        </p>
+
+        <h2 id="predicats">Prédicats</h2>
+        <ol class="steps">
+          <li>
+            Contributions <strong>volontaires</strong> du peuple, sans retour individuel.
+          </li>
+          <li>
+            <strong>Aucun</strong> leg, <strong>aucune</strong> grande fortune,
+            <strong>aucun</strong> fonds institutionnel / de retraite / étatique dans le
+            scénario de base.
+          </li>
+          <li>
+            Une personne, une voix&nbsp;: payer plus n’achète pas le pouvoir.
+          </li>
+          <li>
+            Calculs en <strong>collecte brute</strong>&nbsp;: hors frais de structure,
+            fiscalité, frais de courtage, inflation et variation des cours.
+          </li>
+          <li>
+            Objectifs = <strong>participations partielles</strong> (1&nbsp;%, puis 5&nbsp;%),
+            pas un contrôle total.
+          </li>
+          <li>
+            Premier seuil réglementaire pertinent sur Euronext Paris&nbsp;:
+            <strong>5&nbsp;%</strong> du capital ou des droits de vote (déclaration AMF).
+          </li>
+          <li>
+            Panier illustratif de départ&nbsp;:
+            <strong>TotalEnergies, Engie, Veolia</strong>.
+          </li>
+          <li>
+            Les livrets A / LDDS sont une
+            <strong>réserve potentielle citoyenne</strong>, pas une caisse automatique&nbsp;:
+            réallouer suppose un choix du peuple, et l’épargne réglementée finance déjà
+            le logement social et d’autres usages.
+          </li>
+        </ol>
+
+        <h2 id="donnees">Données de cadrage</h2>
+
+        <h3>Qui peut contribuer&nbsp;? (INSEE)</h3>
+        <p>
+          En 2024, le niveau de vie médian en France métropolitaine est de
+          <strong>26&nbsp;740&nbsp;€ par an</strong> par unité de consommation — soit
+          <strong>2&nbsp;228&nbsp;€ par mois</strong> pour une personne seule (INSEE Première
+          n°2117).
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Déciles de niveau de vie 2024" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Seuil</th>
+                <th scope="col">Niveau de vie annuel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>D1 (10&nbsp;% les plus modestes)</td>
+                <td>13&nbsp;970&nbsp;€</td>
+              </tr>
+              <tr>
+                <td>D3</td>
+                <td>20&nbsp;980&nbsp;€</td>
+              </tr>
+              <tr>
+                <td>Médiane (D5)</td>
+                <td>26&nbsp;740&nbsp;€</td>
+              </tr>
+              <tr>
+                <td>D8</td>
+                <td>38&nbsp;780&nbsp;€</td>
+              </tr>
+              <tr>
+                <td>D9</td>
+                <td>48&nbsp;580&nbsp;€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          La «&nbsp;classe moyenne&nbsp;» au sens usuel (souvent entre D3 et D8) se situe
+          environ entre <strong>21&nbsp;000 et 39&nbsp;000&nbsp;€</strong> de niveau de vie annuel.
+          Au 1<sup>er</sup> janvier 2025, la France compte
+          <strong>68,6&nbsp;millions</strong> d’habitants&nbsp;; la métropole compte environ
+          <strong>30,5&nbsp;millions</strong> de ménages (recensement 2023).
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Paliers de cotisation proposés" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Profil (indicatif)</th>
+                <th scope="col">Cotisation / mois</th>
+                <th scope="col">% du médian mensuel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Modestes</td>
+                <td>5&nbsp;€</td>
+                <td>0,2&nbsp;%</td>
+              </tr>
+              <tr>
+                <td>Classe moyenne basse</td>
+                <td>10&nbsp;€</td>
+                <td>0,4&nbsp;%</td>
+              </tr>
+              <tr>
+                <td>Classe moyenne</td>
+                <td>20&nbsp;€</td>
+                <td>0,9&nbsp;%</td>
+              </tr>
+              <tr>
+                <td>Aisés</td>
+                <td>100&nbsp;€</td>
+                <td>4,5&nbsp;%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Cinq à vingt euros ne sont pas neutres pour tout le monde. Le principe reste
+          la <strong>capacité</strong>, pas l’égalitarisme du montant.
+        </p>
+
+        <h3>Combien «&nbsp;coûtent&nbsp;» les cibles&nbsp;? (bourse)</h3>
+        <p>Capitalisations au 13 octobre 2026 (Boursier.com)&nbsp;:</p>
+
+        <div class="table-wrap" role="region" aria-label="Capitalisations boursières" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Actif</th>
+                <th scope="col">Capitalisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CAC&nbsp;40 (ensemble)</td>
+                <td><strong>2&nbsp;379&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>TotalEnergies</td>
+                <td><strong>180&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>Engie</td>
+                <td><strong>58&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>Veolia</td>
+                <td><strong>23&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>Panier stratégique (les trois)</td>
+                <td><strong>≈&nbsp;262&nbsp;Md€</strong> (~11&nbsp;% du CAC)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Pour mémoire, EY estime la capitalisation du CAC&nbsp;40 à
+          <strong>2&nbsp;567&nbsp;Md€</strong> fin 2025 — le marché a bougé depuis&nbsp;; on
+          retient ici le chiffre du jour.
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Montants pour 1 % et 5 %" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cible</th>
+                <th scope="col">1&nbsp;%</th>
+                <th scope="col">5&nbsp;% (seuil AMF)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Veolia</td>
+                <td>0,23&nbsp;Md€</td>
+                <td><strong>1,16&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>Engie</td>
+                <td>0,58&nbsp;Md€</td>
+                <td><strong>2,92&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>TotalEnergies</td>
+                <td>1,80&nbsp;Md€</td>
+                <td><strong>9,01&nbsp;Md€</strong></td>
+              </tr>
+              <tr>
+                <td>Panier des trois</td>
+                <td>2,62&nbsp;Md€</td>
+                <td><strong>13,1&nbsp;Md€</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Cinq pour cent de Veolia, ce n’est pas «&nbsp;racheter l’eau de France&nbsp;». Mais
+          c’est déjà un actionnaire <strong>déclaré</strong>, visible, capable de voter, de
+          déposer des résolutions et de peser dans le débat public.
+        </p>
+
+        <h3>Combien d’argent dort déjà&nbsp;? (livrets)</h3>
+        <p>
+          Fin décembre 2025, l’encours <strong>Livret&nbsp;A + LDDS</strong> atteint
+          <strong>615&nbsp;Md€</strong> (Caisse des Dépôts). Fin 2024&nbsp;: 603&nbsp;Md€. Environ
+          <strong>58&nbsp;millions</strong> de Livrets&nbsp;A, pour un encours moyen d’environ
+          <strong>7&nbsp;500&nbsp;€</strong> chez les personnes physiques.
+        </p>
+        <p>
+          Le taux du Livret&nbsp;A / LDDS est passé à <strong>1,7&nbsp;%</strong> en août 2025 —
+          loin des rendements boursiers, mais avec une liquidité et une garantie que le
+          fonds citoyen ne doit <strong>jamais</strong> prétendre égaler. L’argument n’est
+          pas «&nbsp;gagnez plus&nbsp;». C’est&nbsp;: une fraction de cette épargne de précaution
+          pourrait, si les citoyens le décident, servir aussi de levier collectif.
+        </p>
+
+        <h2 id="scenarios">Scénarios de collecte</h2>
+        <p>
+          Tous les scénarios ci-dessous sont des <strong>arithmétiques</strong>. Ils ne
+          prédisent pas l’adhésion réelle.
+        </p>
+
+        <h3>A — Base étroite&nbsp;: 1&nbsp;million à 10&nbsp;€ / mois</h3>
+        <p>Collecte&nbsp;: <strong>120&nbsp;M€ / an</strong>.</p>
+        <div class="table-wrap" role="region" aria-label="Scénario A" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cible</th>
+                <th scope="col">Temps brut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5&nbsp;% Veolia</td>
+                <td>~10&nbsp;ans</td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% Engie</td>
+                <td>~24&nbsp;ans</td>
+              </tr>
+              <tr>
+                <td>1&nbsp;% TotalEnergies</td>
+                <td>~15&nbsp;ans</td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% panier stratégique</td>
+                <td>&gt;&nbsp;100&nbsp;ans</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Verdict&nbsp;: utile pour démarrer et apprendre, insuffisant pour peser vite sur
+          les géants.
+        </p>
+
+        <h3>B — Masse critique&nbsp;: 5&nbsp;millions à 10&nbsp;€ / mois</h3>
+        <p>
+          Cinq millions, c’est environ <strong>10&nbsp;% des adultes</strong> (ordre de
+          grandeur) — ambitieux, pas absurde pour un mouvement national durable.
+          Collecte&nbsp;: <strong>600&nbsp;M€ / an</strong>.
+        </p>
+        <div class="table-wrap" role="region" aria-label="Scénario B" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cible</th>
+                <th scope="col">Temps brut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5&nbsp;% Veolia</td>
+                <td><strong>~2&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% Engie</td>
+                <td><strong>~5&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>1&nbsp;% TotalEnergies</td>
+                <td><strong>~3&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>1&nbsp;% panier stratégique</td>
+                <td><strong>~4&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% TotalEnergies</td>
+                <td>~15&nbsp;ans</td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% panier</td>
+                <td>~22&nbsp;ans</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Verdict&nbsp;: en une législature, on peut franchir des seuils
+          <strong>réels</strong> sur Engie ou Veolia, et constituer une tête de pont sur
+          TotalEnergies.
+        </p>
+
+        <h3>C — Large&nbsp;: 10&nbsp;millions à 10&nbsp;€ / mois</h3>
+        <p>Collecte&nbsp;: <strong>1,2&nbsp;Md€ / an</strong>.</p>
+        <div class="table-wrap" role="region" aria-label="Scénario C" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cible</th>
+                <th scope="col">Temps brut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5&nbsp;% Engie</td>
+                <td><strong>~2,5&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>1&nbsp;% panier</td>
+                <td><strong>~2&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% TotalEnergies</td>
+                <td><strong>~7,5&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% panier</td>
+                <td><strong>~11&nbsp;ans</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>D — Paliers selon les moyens&nbsp;: 20&nbsp;% des ménages</h3>
+        <p>
+          Hypothèse&nbsp;: <strong>6,1&nbsp;millions</strong> de ménages (20&nbsp;% des
+          ~30,5&nbsp;M), répartis ainsi&nbsp;: 25&nbsp;% à 5&nbsp;€, 40&nbsp;% à 10&nbsp;€, 25&nbsp;%
+          à 20&nbsp;€, 10&nbsp;% à 100&nbsp;€. Collecte&nbsp;: environ
+          <strong>1,5&nbsp;Md€ / an</strong>.
+        </p>
+        <div class="table-wrap" role="region" aria-label="Scénario D" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cible</th>
+                <th scope="col">Temps brut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5&nbsp;% Engie</td>
+                <td><strong>~2&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% TotalEnergies</td>
+                <td><strong>~6&nbsp;ans</strong></td>
+              </tr>
+              <tr>
+                <td>5&nbsp;% panier stratégique</td>
+                <td><strong>~9&nbsp;ans</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Verdict&nbsp;: avec une participation différenciée selon les classes de niveau de
+          vie, le fonds devient une puissance nationale en moins d’une décennie — sans
+          toucher aux livrets.
+        </p>
+
+        <h3>E — Réallocation partielle des livrets</h3>
+        <div class="table-wrap" role="region" aria-label="Scénario livrets" tabindex="0">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Hypothèse</th>
+                <th scope="col">Montant</th>
+                <th scope="col">Effet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1&nbsp;%</strong> du stock LA+LDDS, une fois</td>
+                <td><strong>~6,2&nbsp;Md€</strong></td>
+                <td>
+                  Couvre d’un coup <strong>5&nbsp;% Engie + 5&nbsp;% Veolia</strong>, ou
+                  ~3&nbsp;% de TotalEnergies
+                </td>
+              </tr>
+              <tr>
+                <td><strong>0,1&nbsp;% par an</strong> du stock</td>
+                <td><strong>~0,6&nbsp;Md€ / an</strong></td>
+                <td>Équivalent au scénario B (5&nbsp;M × 10&nbsp;€)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Ce n’est pas un hold-up sur l’épargne populaire. C’est une question posée aux
+          Français&nbsp;: préférer un rendement réglementé d’environ 1,7&nbsp;%, ou accepter
+          qu’une <em>fraction</em> serve un patrimoine commun sans ROI individuel, avec
+          une mission claire.
+        </p>
+
+        <h2 id="dividendes">Dividendes&nbsp;: accélérateur, pas miracle</h2>
+        <p>
+          Au cours du 13/10/2026, les rendements de dividende approximatifs sont de
+          l’ordre de <strong>4&nbsp;%</strong> (TotalEnergies), <strong>6&nbsp;%</strong>
+          (Engie), <strong>5&nbsp;%</strong> (Veolia). Sur une participation de 5&nbsp;%
+          d’Engie (~2,9&nbsp;Md€), cela ferait de l’ordre de
+          <strong>170&nbsp;M€ de dividendes par an</strong> — à réinvestir.
+        </p>
+        <p>
+          Cela accélère la suite, mais ne remplace pas la collecte initiale. Les
+          dividendes peuvent baisser&nbsp;; les cours aussi. Le fonds doit publier des
+          scénarios prudents, pas des courbes de croissance marketing.
+        </p>
+
+        <h2 id="lecture">Lecture stratégique</h2>
+        <ol class="steps">
+          <li>
+            <strong>Veolia et Engie</strong> sont les portes d’entrée réalistes&nbsp;:
+            capitalisations accessibles, secteurs vitaux.
+          </li>
+          <li>
+            <strong>TotalEnergies</strong> demande plus de volume, mais un
+            <strong>1&nbsp;%</strong> est atteignable en quelques années dès le scénario&nbsp;B.
+          </li>
+          <li>
+            <strong>Acheter 5&nbsp;% du panier entier</strong> (~13&nbsp;Md€) est un horizon de
+            <strong>décennie</strong> sous hypothèses larges — pas un mythe, pas non plus
+            un coup de baguette.
+          </li>
+          <li>
+            Les <strong>livrets</strong> montrent que l’argent existe déjà côté citoyens.
+            Le frein n’est pas «&nbsp;il n’y a rien&nbsp;»&nbsp;; c’est l’organisation, la
+            confiance et le choix d’usage.
+          </li>
+          <li>
+            Le CAC&nbsp;40 entier reste hors de portée d’un rachat massif français seul.
+            L’objectif n’est pas de «&nbsp;tout posséder&nbsp;»&nbsp;: c’est d’obtenir assez de
+            propriété pour <strong>diriger une part du pouvoir de décision</strong>.
+          </li>
+        </ol>
+
+        <h2 id="limites">Ce que ce chapitre ne couvre pas (encore)</h2>
+        <p>
+          Forme juridique exacte&nbsp;; coût de collecte et churn&nbsp;; flottant réellement
+          achetable sans faire monter les cours&nbsp;; droits de vote doubles et
+          actionnaires d’État&nbsp;; fiscalité&nbsp;; scénario européen ou mondial. Ces points
+          appartiennent à la gouvernance, au droit et à un business plan opérationnel —
+          pas à cette première preuve de faisabilité monétaire.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          L’objection «&nbsp;pas assez d’argent&nbsp;» ne tient pas face aux ordres de grandeur
+          français — <strong>même sans</strong> grande fortune, sans institution, sans
+          État.
+        </p>
+        <p>
+          <strong>Quelques euros par mois</strong>, multipliés par des millions de
+          personnes, suffisent à viser le <strong>seuil de 5&nbsp;%</strong> sur Engie ou
+          Veolia en quelques années. Une
+          <strong>fraction de pourcent</strong> de l’encours des livrets A/LDDS équivaut
+          déjà à des années de cotisations. Le fonds n’a pas besoin d’acheter le
+          CAC&nbsp;40&nbsp;: il a besoin d’être un
+          <strong>actionnaire crédible</strong> dans les secteurs qui organisent la vie
+          quotidienne. Si un jour des fonds institutionnels rejoignent la mission, ce
+          sera un bonus — pas la condition de la démonstration.
+        </p>
+        <p>
+          La suite n’est plus arithmétique. Elle est politique et organisationnelle&nbsp;:
+          convaincre, structurer, transparaitre — et n’acheter qu’avec un mandat clair
+          du peuple.
+        </p>
+
+        <nav class="pager" aria-label="Navigation entre chapitres">
+          <a
+            class="pager__link pager__link--prev"
+            href="/chapitres/objections-risques-et-conditions-de-reussite.html"
+            ><span class="pager__label">Précédent</span
+            ><span class="pager__title"
+              >Objections, risques et conditions de réussite</span
+            ></a
+          >
+          <a class="pager__link pager__link--next" href="/"
+            ><span class="pager__label">Retour</span
+            ><span class="pager__title">Page d’accueil</span></a
+          >
+        </nav>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="/">La révolution du capital</a> — traité citoyen.</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("[data-header]");
+      const onScroll = () => {
+        header?.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    </script>
+  </body>
+</html>

@@ -44,6 +44,7 @@ Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même
 - [La proposition concrète](../chapitres/la-proposition-concrete.html) (~9 min)
 - [Attaquer le capital par le capital](../chapitres/attaquer-le-capital-par-le-capital.html) (~7 min)
 - [Financer un patrimoine citoyen](../chapitres/financer-un-patrimoine-citoyen.html) (~6 min)
+- [Faisabilité du fonds citoyen (France)](../chapitres/faisabilite-du-fonds-citoyen.html) (~12 min)
 - [Rachat de la dette et création monétaire](../chapitres/rachat-de-la-dette-et-creation-monetaire.html) (~8 min)
 - [Entreprises stratégiques et pouvoir de décision](../chapitres/entreprises-strategiques-et-pouvoir-de-decision.html) (~6 min)
 - [Gouvernance, transparence, échelle mondiale](../chapitres/gouvernance-transparence-echelle-mondiale.html) (~7 min)
