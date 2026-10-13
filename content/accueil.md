@@ -25,8 +25,9 @@ Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même
 2. **Constat politique** — Le vote ne suffit pas si le pouvoir économique reste hors de portée citoyenne.
 3. **Méthode** — Cotisations et dons volontaires ; patrimoine collectif ; pas de ROI individuel attendu.
 4. **Action** — Participations dans des entreprises stratégiques ; réinvestissement ; influence sur les prix et les priorités en cas de crise.
-5. **Garde-fous** — Une personne, une voix ; transparence ; patrimoine inaliénable au profit du collectif.
-6. **Horizon** — Contre-pouvoir économique d’abord ; capacité politique renforcée ensuite.
+5. **Dette** — Racheter des créances nationales ; prêter aux États à taux bas ou zéro ; desserrer l’étau avant de reconquérir la création monétaire.
+6. **Garde-fous** — Une personne, une voix ; transparence ; patrimoine inaliénable au profit du collectif.
+7. **Horizon** — Contre-pouvoir économique d’abord ; capacité politique renforcée ensuite.
 
 ## Chapitres
 
@@ -38,6 +39,7 @@ Textes indépendants, avec leur propre temps de lecture :
 - [Du capitalisme des humains au capitalisme des machines](../chapitres/du-capitalisme-des-humains-au-capitalisme-des-machines.html) (~9 min)
 - [Attaquer le capital par le capital](../chapitres/attaquer-le-capital-par-le-capital.html) (~7 min)
 - [Financer un patrimoine citoyen](../chapitres/financer-un-patrimoine-citoyen.html) (~6 min)
+- [Rachat de la dette et création monétaire](../chapitres/rachat-de-la-dette-et-creation-monetaire.html) (~8 min)
 - [Entreprises stratégiques et pouvoir de décision](../chapitres/entreprises-strategiques-et-pouvoir-de-decision.html) (~6 min)
 - [Gouvernance, transparence, échelle mondiale](../chapitres/gouvernance-transparence-echelle-mondiale.html) (~7 min)
 - [Objections, risques et conditions de réussite](../chapitres/objections-risques-et-conditions-de-reussite.html) (~8 min)

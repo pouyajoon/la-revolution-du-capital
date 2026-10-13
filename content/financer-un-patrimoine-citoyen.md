@@ -39,3 +39,5 @@ Ces sommes peuvent financer de nouvelles acquisitions, soutenir des coopérative
 Mais il ne faut pas confondre croissance du patrimoine et bénéfice garanti. Les actions peuvent perdre de la valeur. Les dividendes peuvent être réduits ou suspendus. Certains investissements échouent. Les revenus doivent être estimés prudemment, le portefeuille diversifié, et une réserve de sécurité maintenue.
 
 L’enjeu n’est pas d’accumuler pour accumuler. Le patrimoine est un moyen au service d’une finalité sociale. La croissance financière reste subordonnée à la mission humaine et démocratique.
+
+Au-delà des actions, le fonds peut aussi servir à [racheter de la dette publique et prêter aux États](../chapitres/rachat-de-la-dette-et-creation-monetaire.html) à des conditions humaines — pour desserrer l’étau avant de reconquérir la création monétaire.

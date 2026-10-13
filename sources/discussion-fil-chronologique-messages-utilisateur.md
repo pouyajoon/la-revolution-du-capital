@@ -52,3 +52,10 @@ Note: chronologie reconstituée à partir des messages utilisateur visibles dans
 - Revenu universel comme fumisterie / soupape : payer les gens pour qu’ils restent tranquilles et consomment, pendant que le capital s’enrichit sans eux ; éviter la révolte après licenciements massifs.
 - Robotique et automatisation de la guerre / répression : gendarmes d’une autre région pour ne pas taper sur des cousins ; demain des machines sans remords. Répressions de masse déjà possibles ; dérives occidentales (ex. concentration du pouvoir aux USA). Si le capital n’a plus besoin des humains, il peut les éliminer (y compris sous prétexte de « sauver la Terre »).
 - D’où l’urgence d’agir maintenant, tant que le peuple a encore une prise.
+
+17. Rachat de la dette et création monétaire :
+
+- Le fonds continue de grossir via l’acquisition de parts d’entreprises, mais peut aussi racheter des créances nationales (ex. dette française détenue par des créanciers étrangers) et prêter à l’État / à l’Europe à taux bas ou zéro.
+- Objectif : le temps que États et Europe récupèrent une création monétaire sans passer par le réseau bancaire privé (qui enrichit immédiatement le capital ; les États s’endettent).
+- Montage issu de l’ultralibéralisation des années 1970 ; changer les règles exige un environnement politique fort, aujourd’hui manipulé/contraint par le capital → d’abord sauver les États de cette pression.
+- Concepts ultralibéraux imposés notamment depuis les États-Unis (qui en profitent le plus) ; mystification du capital présentée comme seule façon d’exister — or le capital ne fait que s’enrichir.
