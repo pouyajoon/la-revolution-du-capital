@@ -59,3 +59,10 @@ Note: chronologie reconstituée à partir des messages utilisateur visibles dans
 - Objectif : le temps que États et Europe récupèrent une création monétaire sans passer par le réseau bancaire privé (qui enrichit immédiatement le capital ; les États s’endettent).
 - Montage issu de l’ultralibéralisation des années 1970 ; changer les règles exige un environnement politique fort, aujourd’hui manipulé/contraint par le capital → d’abord sauver les États de cette pression.
 - Concepts ultralibéraux imposés notamment depuis les États-Unis (qui en profitent le plus) ; mystification du capital présentée comme seule façon d’exister — or le capital ne fait que s’enrichir.
+
+18. Clarifier la proposition concrète + formation :
+
+- Fonds transparent par son manifeste, humaniste, intérêt du commun ; acquisition d’actifs qui créent une rente pour le fonds ; rente réinvestie (sous-partie dettes nationales pour autonomie des États + continuer à racheter d’autres actifs).
+- Humains : plutôt que consommer au profit du capital, injecter abonnements mensuels, sommes fixes, legs — aucun ROI (« investir » est un grand mot).
+- Mondialisable ; les outils du capital existent déjà.
+- Problème majeur : non-connaissance de ces outils (holdings, niches fiscales, entreprises, dividendes) — lycéens et adultes ; former massivement pour connaître l’adversaire. Le capital a investi pour que l’école ne parle jamais d’argent ni de ces techniques ; on forme à travailler au service de tiers à la solde du capital.

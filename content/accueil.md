@@ -1,14 +1,20 @@
 # La révolution du capital
 
-Temps de lecture : ~7 min
+Temps de lecture : ~8 min
 
 ## Thèse
 
 Le pouvoir économique est aujourd’hui concentré. Les citoyens votent, mais ils maîtrisent peu les structures qui fixent les prix, orientent les investissements et façonnent la vie quotidienne. La révolution du capital propose une réponse pacifique et légale : constituer collectivement un patrimoine citoyen, pour opposer au capital concentré une force de capital commun, au service du bien commun plutôt que du rendement individuel.
 
+## Proposition concrète
+
+Constituer un **fonds citoyen** — transparent par son manifeste, humaniste, au service du commun. Il acquiert des actifs qui produisent une rente ; cette rente est réinvestie : en partie pour racheter des dettes nationales (autonomie des États), en partie pour acquérir encore d’autres actifs.
+
+Plutôt que de consommer au profit du capital, les humains injectent abonnements, sommes fixes, legs — sans ROI individuel. Échelle mondialisable : les outils existent déjà. Obstacle majeur : l’ignorance de ces outils (holdings, dividendes, niches fiscales), entretenue dès l’école. Sans connaître l’adversaire, on ne peut pas le combattre.
+
 ## Orientation
 
-Il ne s’agit pas d’enrichir une nouvelle classe d’actionnaires. Il s’agit d’attaquer le capital par le capital : acquérir progressivement des participations — surtout dans des secteurs stratégiques — réinvestir les dividendes, exercer des droits de vote, et remettre une part du pouvoir économique entre les mains d’une organisation démocratique, transparente, mondiale dans son ambition.
+Attaquer le capital par le capital : participations stratégiques, réinvestissement des dividendes, organisation démocratique et transparente. Ensuite seulement, fort de cette capacité économique, renforcer la démocratie politique.
 
 ## Préceptes majeurs
 
@@ -21,7 +27,7 @@ Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même
 
 ## Démarches
 
-1. **Constat** — Distinguer l’argent du capital : le capital est aussi une capacité de décision.
+1. **Constat** — Distinguer l’argent du capital ; former aux outils de l’adversaire.
 2. **Constat politique** — Le vote ne suffit pas si le pouvoir économique reste hors de portée citoyenne.
 3. **Méthode** — Cotisations et dons volontaires ; patrimoine collectif ; pas de ROI individuel attendu.
 4. **Action** — Participations dans des entreprises stratégiques ; réinvestissement ; influence sur les prix et les priorités en cas de crise.
@@ -31,12 +37,11 @@ Ce n’est pas une révolution de rue : utiliser le capitalisme contre lui-même
 
 ## Chapitres
 
-Textes indépendants, avec leur propre temps de lecture :
-
 - [Le capital n’est pas seulement de l’argent](../chapitres/le-capital-nest-pas-seulement-de-largent.html) (~5 min)
 - [Pourquoi le vote ne suffit pas](../chapitres/pourquoi-le-vote-ne-suffit-pas.html) (~5 min)
 - [Trois préceptes majeurs](../chapitres/trois-preceptes-majeurs.html) (~8 min)
 - [Du capitalisme des humains au capitalisme des machines](../chapitres/du-capitalisme-des-humains-au-capitalisme-des-machines.html) (~9 min)
+- [La proposition concrète](../chapitres/la-proposition-concrete.html) (~9 min)
 - [Attaquer le capital par le capital](../chapitres/attaquer-le-capital-par-le-capital.html) (~7 min)
 - [Financer un patrimoine citoyen](../chapitres/financer-un-patrimoine-citoyen.html) (~6 min)
 - [Rachat de la dette et création monétaire](../chapitres/rachat-de-la-dette-et-creation-monetaire.html) (~8 min)

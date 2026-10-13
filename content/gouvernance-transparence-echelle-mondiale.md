@@ -28,8 +28,8 @@ Le problème de la concentration économique dépasse les frontières. Les entre
 
 Mais commencer directement par une structure mondiale complexe risquerait de rendre le projet difficile à gouverner et à contrôler.
 
-Une voie plus réaliste : commencer localement, avec un groupe fondateur, une charte publique, des objectifs limités et des comptes accessibles. Tester les procédures, vérifier les coûts, mesurer l’intérêt des citoyens, démontrer que les contrôles fonctionnent.
+Le manifeste du fonds — humaniste, public, opposable — est le premier acte de transparence. Les outils du capital existent déjà à l’échelle mondiale ; la proposition l’est aussi dans son principe. Une voie réaliste peut néanmoins commencer localement, avec un groupe fondateur, ce manifeste, des objectifs limités et des comptes accessibles. Tester les procédures, vérifier les coûts, mesurer l’intérêt des citoyens, démontrer que les contrôles fonctionnent.
 
 Des antennes locales peuvent ensuite se fédérer à l’échelle nationale, puis internationale. Chaque niveau conserve une autonomie définie ; les règles communes garantissent la transparence, la protection du patrimoine collectif et le respect des principes démocratiques.
 
-La croissance ne devrait pas se mesurer uniquement au nombre de membres ou au montant des actifs. Elle devrait aussi s’évaluer par la qualité démocratique, la fiabilité financière, l’utilité sociale et la fidélité à la mission.
+La croissance ne devrait pas se mesurer uniquement au nombre de membres ou au montant des actifs. Elle devrait aussi s’évaluer par la qualité démocratique, la fiabilité financière, l’utilité sociale, la fidélité à la mission — et par la capacité à former les membres aux outils de l’adversaire.
