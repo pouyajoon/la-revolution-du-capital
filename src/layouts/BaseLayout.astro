@@ -1,0 +1,94 @@
+---
+import type { Locale } from '../i18n/locales';
+import { defaultLocale, homePath, localeMeta, locales } from '../i18n/locales';
+import { t } from '../i18n/ui';
+import SiteHeader from '../components/SiteHeader.astro';
+import '../styles/site.css';
+
+type Props = {
+  locale: Locale;
+  title: string;
+  description: string;
+  canonicalPath: string;
+  /** Paths per locale for hreflang (same logical page). */
+  alternatePaths?: Partial<Record<Locale, string>>;
+  ogType?: 'website' | 'article';
+};
+
+const {
+  locale,
+  title,
+  description,
+  canonicalPath,
+  alternatePaths,
+  ogType = 'website',
+} = Astro.props;
+
+const meta = localeMeta[locale];
+const strings = t(locale);
+const site = Astro.site ?? new URL('https://larevolutionducapital.org');
+const canonicalUrl = new URL(canonicalPath, site).href;
+
+const alternates: { locale: Locale | 'x-default'; href: string }[] = [];
+for (const loc of locales) {
+  const path =
+    alternatePaths?.[loc] ??
+    (loc === defaultLocale ? canonicalPath.replace(/^\/fa/, '') || '/' : `/fa${canonicalPath === '/' ? '' : canonicalPath}`);
+  alternates.push({ locale: loc, href: new URL(path, site).href });
+}
+alternates.push({
+  locale: 'x-default',
+  href: new URL(alternatePaths?.fr ?? homePath('fr'), site).href,
+});
+---
+
+<!doctype html>
+<html lang={meta.lang} dir={meta.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content={meta.ogLocale} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href={canonicalUrl} />
+    {
+      alternates.map((alt) => (
+        <link rel="alternate" hreflang={alt.locale} href={alt.href} />
+      ))
+    }
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,550;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="4c9cfb90-9741-406c-a1d8-9b4db9d1a030"></script>
+  </head>
+  <body>
+    <SiteHeader locale={locale} alternateHrefs={alternatePaths} />
+    <slot />
+
+    <footer class="site-footer">
+      <p>{strings.footerLine}</p>
+      <p>{strings.footerNote}</p>
+    </footer>
+    <script>
+      const header = document.querySelector('[data-header]');
+      const onScroll = () => {
+        header?.classList.toggle('is-scrolled', window.scrollY > 8);
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    </script>
+  </body>
+</html>

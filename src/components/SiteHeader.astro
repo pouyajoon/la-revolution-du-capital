@@ -1,0 +1,25 @@
+---
+import type { Locale } from '../i18n/locales';
+import { homePath } from '../i18n/locales';
+import { t } from '../i18n/ui';
+import LangSwitcher from './LangSwitcher.astro';
+
+type Props = {
+  locale: Locale;
+  metaLabel?: string;
+  alternateHrefs?: Partial<Record<Locale, string>>;
+};
+
+const { locale, metaLabel, alternateHrefs } = Astro.props;
+const strings = t(locale);
+---
+
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="site-header__brand" href={homePath(locale)}>{strings.brand}</a>
+    <div class="site-header__actions">
+      <span class="site-header__meta">{metaLabel ?? strings.siteTag}</span>
+      <LangSwitcher locale={locale} alternateHrefs={alternateHrefs} />
+    </div>
+  </div>
+</header>

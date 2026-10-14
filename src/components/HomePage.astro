@@ -1,0 +1,94 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ChapterList from './ChapterList.astro';
+import type { Locale } from '../i18n/locales';
+import { homePath } from '../i18n/locales';
+import { t } from '../i18n/ui';
+
+type Props = {
+  locale: Locale;
+};
+
+const { locale } = Astro.props;
+const strings = t(locale);
+
+const pages = await getCollection(
+  'pages',
+  ({ data }) => data.locale === locale && !data.draft,
+);
+const entry = pages.find((p) => p.id === `${locale}/accueil` || p.id.endsWith('/accueil'));
+
+if (!entry) {
+  throw new Error(`Missing home page content for locale: ${locale}`);
+}
+
+const { Content } = await render(entry);
+const {
+  title,
+  description,
+  readingMinutes,
+  heroLede,
+  chapterTitles,
+  chaptersHeading,
+  fabricationHeading,
+  fabrication,
+} = entry.data;
+
+const alternatePaths = {
+  fr: homePath('fr'),
+  fa: homePath('fa'),
+} as const;
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  canonicalPath={homePath(locale)}
+  alternatePaths={alternatePaths}
+  ogType="website"
+>
+  <main>
+    <section class="hero" aria-labelledby="brand-title">
+      <h1 id="brand-title" class="hero__brand">{strings.brand}</h1>
+      <p class="hero__lede">{heroLede}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#proposition">{strings.ctaProposition}</a>
+        <a class="button button--ghost" href="#preceptes">{strings.ctaPreceptes}</a>
+      </div>
+    </section>
+
+    <article class="article">
+      <p class="article__meta">
+        <span>{strings.homeLabel}</span>
+        <span aria-hidden="true">·</span>
+        <span>{strings.readingTime(readingMinutes)}</span>
+      </p>
+
+      <div class="article__body">
+        <Content />
+      </div>
+
+      <h2 id="chapitres">{chaptersHeading}</h2>
+      <p>{strings.chaptersIntro}</p>
+      <ChapterList locale={locale} titles={chapterTitles ?? {}} />
+
+      <h2 id="fabrication">{fabricationHeading}</h2>
+      <p>{fabrication}</p>
+    </article>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  .article__body > p:first-of-type {
+    font-size: 1.35rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .article__body h2,
+  .article h2 {
+    scroll-margin-top: 5rem;
+  }
+</style>

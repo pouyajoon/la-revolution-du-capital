@@ -1,0 +1,98 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  adjacentChapters,
+  chapterPath,
+  chapters as chapterRegistry,
+  getChapterById,
+} from '../data/chapters';
+import type { Locale } from '../i18n/locales';
+import { homePath } from '../i18n/locales';
+import { t } from '../i18n/ui';
+
+type Props = {
+  locale: Locale;
+  entry: CollectionEntry<'chapters'>;
+};
+
+const { locale, entry } = Astro.props;
+const { Content } = await render(entry);
+const strings = t(locale);
+
+const chapter = getChapterById(entry.data.id);
+if (!chapter) throw new Error(`Unknown chapter: ${entry.data.id}`);
+
+const path = chapterPath(locale, entry.data.id);
+const alternatePaths = {
+  fr: chapterPath('fr', entry.data.id),
+  fa: chapterPath('fa', entry.data.id),
+} as const;
+
+const siblings = await getCollection(
+  'chapters',
+  ({ data }) => data.locale === locale && !data.draft,
+);
+const titleById = Object.fromEntries(siblings.map((e) => [e.data.id, e.data.title]));
+
+const { prev, next } = adjacentChapters(entry.data.id);
+const order = chapterRegistry.findIndex((c) => c.id === entry.data.id) + 1;
+const total = chapterRegistry.length;
+const metaLabel =
+  locale === 'fa' ? `فصل ${order} / ${total}` : `Chapitre ${order} / ${total}`;
+---
+
+<BaseLayout
+  locale={locale}
+  title={`${entry.data.title} — ${strings.brand}`}
+  description={entry.data.description}
+  canonicalPath={path}
+  alternatePaths={alternatePaths}
+  ogType="article"
+>
+  <main>
+    <article class="article article--chapter">
+      <p class="article__meta">
+        <a href={`${homePath(locale)}#chapitres`}>{strings.allChapters}</a>
+        <span aria-hidden="true">·</span>
+        <span>{strings.readingTime(entry.data.readingMinutes)}</span>
+        <span aria-hidden="true">·</span>
+        <span>{metaLabel}</span>
+      </p>
+      <h1 class="article__title">{entry.data.title}</h1>
+      <div class="article__body">
+        <Content />
+      </div>
+
+      <nav
+        class="pager"
+        aria-label={locale === 'fa' ? 'فصل‌های مجاور' : 'Chapitres voisins'}
+      >
+        {
+          prev && titleById[prev.id] && (
+            <a class="pager__link" href={chapterPath(locale, prev.id)}>
+              <span class="pager__label">{locale === 'fa' ? 'قبلی' : 'Précédent'}</span>
+              <span class="pager__title">{titleById[prev.id]}</span>
+            </a>
+          )
+        }
+        {
+          next && titleById[next.id] && (
+            <a class="pager__link pager__link--next" href={chapterPath(locale, next.id)}>
+              <span class="pager__label">{locale === 'fa' ? 'بعدی' : 'Suivant'}</span>
+              <span class="pager__title">{titleById[next.id]}</span>
+            </a>
+          )
+        }
+      </nav>
+    </article>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  .article__body > p:first-of-type {
+    font-size: 1.35rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+</style>

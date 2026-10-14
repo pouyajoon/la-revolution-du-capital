@@ -1,0 +1,29 @@
+---
+import { chapters, chapterPath } from '../data/chapters';
+import type { Locale } from '../i18n/locales';
+
+type Props = {
+  locale: Locale;
+  /** Titles keyed by stable chapter id */
+  titles: Record<string, string>;
+};
+
+const { locale, titles } = Astro.props;
+---
+
+<ul class="chapter-list">
+  {
+    chapters.map((ch) => {
+      const title = titles[ch.id];
+      if (!title) return null;
+      return (
+        <li>
+          <a href={chapterPath(locale, ch.id)}>
+            <span class="chapter-list__title">{title}</span>
+            <span class="chapter-list__meta">{ch.readingMinutes}&nbsp;min</span>
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>

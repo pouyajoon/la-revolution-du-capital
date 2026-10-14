@@ -1,0 +1,21 @@
+# La révolution du capital / انقلاب سرمایه
+
+> Citizen treatise: oppose concentrated capital with a collective, democratic capital force in service of the common good.
+
+Languages: French (default), Farsi (`/fa`, RTL)
+
+## Key URLs
+
+- Home (FR): https://larevolutionducapital.org/
+- Home (FA): https://larevolutionducapital.org/fa
+- Chapters (FR): https://larevolutionducapital.org/#chapitres
+- Chapters (FA): https://larevolutionducapital.org/fa#chapitres
+
+French chapter URLs: `/chapitres/{slug-fr}`
+Farsi chapter URLs: `/fa/فصل/{slug-fa}` (Persian slugs)
+
+## Notes
+
+- Editorial content is Markdown per locale under `src/content/`.
+- Stable chapter ids are ASCII; public URL slugs are localized (Persian for FA).
+- Use `hreflang` alternates to map FR ↔ FA equivalents.

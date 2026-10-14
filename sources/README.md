@@ -9,7 +9,8 @@ Matière première pour le site *La révolution du capital*.
 | [donnees-faisabilite-fonds-citoyen.md](./donnees-faisabilite-fonds-citoyen.md) | Prédicats, chiffres et sources (INSEE, CDC, BdF, CAC 40, AMF) pour le chapitre de faisabilité |
 | [audit-fondements-factuels.md](./audit-fondements-factuels.md) | Audit claim → statut → source → reformulation (préceptes, machines, dette, faisabilité) |
 
-Décisions produit (provisoires) :
-- Site en **français uniquement** pour le moment
-- Déploiement : **Netlify**
+Décisions produit :
+- Site **Astro** (SSG), contenu Markdown par locale sous `src/content/`
+- Langues : **français** (défaut, sans préfixe) + **farsi** (`/fa`)
+- Déploiement : **Netlify** (`npm run build` → `dist/`)
 - Remote Git prévu : https://github.com/pouyajoon/la-revolution-du-capital.git

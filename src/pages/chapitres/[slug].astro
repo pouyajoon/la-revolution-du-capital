@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import ChapterPage from '../../components/ChapterPage.astro';
+import { getChapterById } from '../../data/chapters';
+
+export async function getStaticPaths() {
+  const entries = await getCollection(
+    'chapters',
+    ({ data }) => data.locale === 'fr' && !data.draft,
+  );
+  return entries.flatMap((entry) => {
+    const def = getChapterById(entry.data.id);
+    if (!def) return [];
+    return [
+      {
+        params: { slug: def.slugs.fr },
+        props: { entry },
+      },
+    ];
+  });
+}
+
+const { entry } = Astro.props;
+---
+
+<ChapterPage locale="fr" entry={entry} />

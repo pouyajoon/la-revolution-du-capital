@@ -1,20 +1,10 @@
-# Contenu éditorial
+# Contenu éditorial (legacy)
 
-Textes indépendants du site, dérivés des sources mais centrés sur les idées.
+Les textes de production vivent désormais dans `src/content/` (Astro).
 
-| Fichier | Lecture |
-|---------|---------|
-| [accueil.md](./accueil.md) | ~8 min |
-| [le-capital-nest-pas-seulement-de-largent.md](./le-capital-nest-pas-seulement-de-largent.md) | ~5 min |
-| [pourquoi-le-vote-ne-suffit-pas.md](./pourquoi-le-vote-ne-suffit-pas.md) | ~5 min |
-| [trois-preceptes-majeurs.md](./trois-preceptes-majeurs.md) | ~8 min |
-| [du-capitalisme-des-humains-au-capitalisme-des-machines.md](./du-capitalisme-des-humains-au-capitalisme-des-machines.md) | ~9 min |
-| [la-proposition-concrete.md](./la-proposition-concrete.md) | ~9 min |
-| [attaquer-le-capital-par-le-capital.md](./attaquer-le-capital-par-le-capital.md) | ~7 min |
-| [financer-un-patrimoine-citoyen.md](./financer-un-patrimoine-citoyen.md) | ~6 min |
-| [rachat-de-la-dette-et-creation-monetaire.md](./rachat-de-la-dette-et-creation-monetaire.md) | ~8 min |
-| [entreprises-strategiques-et-pouvoir-de-decision.md](./entreprises-strategiques-et-pouvoir-de-decision.md) | ~6 min |
-| [gouvernance-transparence-echelle-mondiale.md](./gouvernance-transparence-echelle-mondiale.md) | ~7 min |
-| [objections-risques-et-conditions-de-reussite.md](./objections-risques-et-conditions-de-reussite.md) | ~8 min |
-| [accumuler-dabord-orienter-ensuite.md](./accumuler-dabord-orienter-ensuite.md) | ~9 min |
-| [faisabilite-du-fonds-citoyen.md](./faisabilite-du-fonds-citoyen.md) | ~12 min |
+Ce dossier reste une **archive de rédaction** ; ne plus y dupliquer les pages publiées.
+
+| Emplacement Astro | Rôle |
+|-------------------|------|
+| [`src/content/pages/`](../src/content/pages/) | Accueil et pages par locale (`fr/`, `fa/`) |
+| [`src/content/chapters/`](../src/content/chapters/) | Chapitres par locale (migration progressive) |

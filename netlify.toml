@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
 
 [[headers]]
   for = "/*"
@@ -7,3 +8,68 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/chapitres/le-capital-nest-pas-seulement-de-largent.html"
+  to = "/chapitres/le-capital-nest-pas-seulement-de-largent"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/pourquoi-le-vote-ne-suffit-pas.html"
+  to = "/chapitres/pourquoi-le-vote-ne-suffit-pas"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/trois-preceptes-majeurs.html"
+  to = "/chapitres/trois-preceptes-majeurs"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/du-capitalisme-des-humains-au-capitalisme-des-machines.html"
+  to = "/chapitres/du-capitalisme-des-humains-au-capitalisme-des-machines"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/la-proposition-concrete.html"
+  to = "/chapitres/la-proposition-concrete"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/attaquer-le-capital-par-le-capital.html"
+  to = "/chapitres/attaquer-le-capital-par-le-capital"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/financer-un-patrimoine-citoyen.html"
+  to = "/chapitres/financer-un-patrimoine-citoyen"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/rachat-de-la-dette-et-creation-monetaire.html"
+  to = "/chapitres/rachat-de-la-dette-et-creation-monetaire"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/entreprises-strategiques-et-pouvoir-de-decision.html"
+  to = "/chapitres/entreprises-strategiques-et-pouvoir-de-decision"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/gouvernance-transparence-echelle-mondiale.html"
+  to = "/chapitres/gouvernance-transparence-echelle-mondiale"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/objections-risques-et-conditions-de-reussite.html"
+  to = "/chapitres/objections-risques-et-conditions-de-reussite"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/accumuler-dabord-orienter-ensuite.html"
+  to = "/chapitres/accumuler-dabord-orienter-ensuite"
+  status = 301
+
+[[redirects]]
+  from = "/chapitres/faisabilite-du-fonds-citoyen.html"
+  to = "/chapitres/faisabilite-du-fonds-citoyen"
+  status = 301
