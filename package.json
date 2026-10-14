@@ -7,7 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/generate-pdfs.mjs",
+    "build:site": "astro build",
+    "pdf": "node scripts/generate-pdfs.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -15,5 +17,8 @@
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.3.8",
     "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
   }
 }

@@ -1,0 +1,237 @@
+---
+import { getCollection, render } from 'astro:content';
+import { chapters as chapterRegistry } from '../data/chapters';
+import type { Locale } from '../i18n/locales';
+import { homePath, localeMeta } from '../i18n/locales';
+import { t } from '../i18n/ui';
+import {
+  bookPath,
+  computeEdition,
+  pdfFilename,
+  pdfPath,
+} from '../lib/edition';
+import '../styles/book.css';
+
+type Props = {
+  locale: Locale;
+};
+
+const { locale } = Astro.props;
+const strings = t(locale);
+const meta = localeMeta[locale];
+const edition = computeEdition(locale);
+const site = Astro.site ?? new URL('https://larevolutionducapital.org');
+
+const pages = await getCollection(
+  'pages',
+  ({ data }) => data.locale === locale && !data.draft,
+);
+const home = pages.find(
+  (p) => p.id === `${locale}/accueil` || p.id.endsWith('/accueil'),
+);
+if (!home) {
+  throw new Error(`Missing home page content for locale: ${locale}`);
+}
+
+const chapterEntries = await getCollection(
+  'chapters',
+  ({ data }) => data.locale === locale && !data.draft,
+);
+const byId = Object.fromEntries(chapterEntries.map((e) => [e.data.id, e]));
+
+const orderedChapters = chapterRegistry.map((def) => {
+  const entry = byId[def.id];
+  if (!entry) throw new Error(`Missing chapter ${def.id} for ${locale}`);
+  return entry;
+});
+
+const { Content: IntroContent } = await render(home);
+const renderedChapters = await Promise.all(
+  orderedChapters.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  }),
+);
+
+const chapterTitles =
+  home.data.chapterTitles ??
+  Object.fromEntries(orderedChapters.map((e) => [e.data.id, e.data.title]));
+
+const introHeading = locale === 'fa' ? 'مقدمه' : 'Introduction';
+const tocHeading = locale === 'fa' ? 'فهرست' : 'Table des matières';
+const pageTitle = `${strings.brand} — ${locale === 'fa' ? 'نسخهٔ کتاب' : 'Mode livre'}`;
+const canonicalPath = bookPath(locale);
+const canonicalUrl = new URL(canonicalPath, site).href;
+const alternatePaths = {
+  fr: bookPath('fr'),
+  fa: bookPath('fa'),
+} as const;
+---
+
+<!doctype html>
+<html lang={meta.lang} dir={meta.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={home.data.description} />
+    <meta name="edition" content={edition.hash} />
+    <meta name="edition-date" content={edition.date} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="fr" href={new URL(alternatePaths.fr, site).href} />
+    <link rel="alternate" hreflang="fa" href={new URL(alternatePaths.fa, site).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(alternatePaths.fr, site).href} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600&family=Fraunces:opsz,wght@9..144,500;9..144,550&family=Noto+Naskh+Arabic:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-book-root>
+    <div class="book-toolbar" data-book-toolbar>
+      <a href={homePath(locale)}>{strings.homeLabel}</a>
+      <div class="book-toolbar__links">
+        <div class="book-font-controls" role="group" aria-label={strings.fontSizeLabel}>
+          <button type="button" data-font-smaller aria-label={strings.fontSmaller} title={strings.fontSmaller}>
+            A−
+          </button>
+          <button type="button" data-font-larger aria-label={strings.fontLarger} title={strings.fontLarger}>
+            A+
+          </button>
+        </div>
+        <a
+          class="book-toolbar__icon-link"
+          href={pdfPath(locale)}
+          download={pdfFilename(locale)}
+          aria-label={strings.downloadPdf}
+          title={strings.downloadPdf}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M12 3a1 1 0 0 1 1 1v8.6l2.3-2.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L11 12.6V4a1 1 0 0 1 1-1zm-6 15a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z"
+            ></path>
+          </svg>
+          <span>{strings.downloadPdf}</span>
+        </a>
+        <button type="button" data-print>
+          {strings.printBook}
+        </button>
+      </div>
+    </div>
+
+    <article class="book">
+      <header class="book-cover">
+        <h1 class="book-cover__brand">{strings.brand}</h1>
+        <p class="book-cover__lede">{home.data.heroLede}</p>
+        <p class="book-cover__meta">{edition.label}</p>
+        <p class="book-cover__meta">{strings.siteTag}</p>
+      </header>
+
+      <nav class="book-toc" aria-labelledby="toc-heading">
+        <h2 id="toc-heading">{tocHeading}</h2>
+        <ol>
+          <li>
+            <a href="#intro">{introHeading}</a>
+          </li>
+          {
+            chapterRegistry.map((ch, i) => (
+              <li>
+                <a href={`#${ch.id}`}>
+                  {`${i + 1}. `}
+                  {chapterTitles[ch.id] ?? byId[ch.id]?.data.title}
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </nav>
+
+      <section class="book-section book-section--intro" id="intro">
+        <h2 class="book-section__title">{introHeading}</h2>
+        <p class="book-section__meta">
+          {strings.readingTime(home.data.readingMinutes)}
+        </p>
+        <div class="book-body">
+          <IntroContent />
+        </div>
+      </section>
+
+      {
+        renderedChapters.map(({ entry, Content }, i) => (
+          <section class="book-section" id={entry.data.id}>
+            <h2 class="book-section__title">
+              {locale === 'fa'
+                ? `فصل ${i + 1}. ${entry.data.title}`
+                : `Chapitre ${i + 1}. ${entry.data.title}`}
+            </h2>
+            <p class="book-section__meta">
+              {strings.readingTime(entry.data.readingMinutes)}
+            </p>
+            <div class="book-body">
+              <Content />
+            </div>
+          </section>
+        ))
+      }
+
+      <p class="book-footer-note">
+        {edition.label}
+        <br />
+        {strings.footerNote}
+      </p>
+    </article>
+
+    <script>
+      document.querySelector('[data-print]')?.addEventListener('click', () => {
+        window.print();
+      });
+
+      const root = document.documentElement;
+      const storageKey = 'book-font-step';
+      const minStep = -1;
+      const maxStep = 4;
+      const base = 11.5;
+      const stepPt = 1.25;
+
+      const clamp = (n: number) => Math.min(maxStep, Math.max(minStep, n));
+
+      const applyStep = (step: number) => {
+        const size = base + step * stepPt;
+        const measure = 68 + step * 6;
+        root.style.setProperty('--book-font-size', `${size}pt`);
+        root.style.setProperty('--measure', `${measure}ch`);
+        root.dataset.fontStep = String(step);
+        try {
+          localStorage.setItem(storageKey, String(step));
+        } catch {
+          /* ignore */
+        }
+        const smaller = document.querySelector('[data-font-smaller]');
+        const larger = document.querySelector('[data-font-larger]');
+        if (smaller instanceof HTMLButtonElement) smaller.disabled = step <= minStep;
+        if (larger instanceof HTMLButtonElement) larger.disabled = step >= maxStep;
+      };
+
+      let step = 0;
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved != null) step = clamp(Number.parseInt(saved, 10) || 0);
+      } catch {
+        /* ignore */
+      }
+      applyStep(step);
+
+      document.querySelector('[data-font-smaller]')?.addEventListener('click', () => {
+        step = clamp(step - 1);
+        applyStep(step);
+      });
+      document.querySelector('[data-font-larger]')?.addEventListener('click', () => {
+        step = clamp(step + 1);
+        applyStep(step);
+      });
+    </script>
+  </body>
+</html>

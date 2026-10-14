@@ -11,15 +11,17 @@ npm run dev
 
 - Accueil FR : http://localhost:4321/
 - Accueil FA : http://localhost:4321/fa
+- Mode livre : http://localhost:4321/livre · http://localhost:4321/fa/livre
 - Ex. chapitre FA : http://localhost:4321/fa/فصل/پیشنهاد-مشخص
 
 ## Build / Netlify
 
 ```bash
+npx playwright install chromium   # une fois, pour générer les PDF
 npm run build
 ```
 
-Publish directory : `dist/`. Les anciennes URLs `/chapitres/*.html` redirigent en 301.
+Publish directory : `dist/`. Le build Astro produit aussi `/pdf/la-revolution-du-capital-{fr,fa}.pdf`. Les anciennes URLs `/chapitres/*.html` redirigent en 301.
 
 ## Contenu
 

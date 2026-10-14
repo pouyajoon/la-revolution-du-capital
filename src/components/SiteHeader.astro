@@ -2,6 +2,7 @@
 import type { Locale } from '../i18n/locales';
 import { homePath } from '../i18n/locales';
 import { t } from '../i18n/ui';
+import { bookPath, pdfFilename, pdfPath } from '../lib/edition';
 import LangSwitcher from './LangSwitcher.astro';
 
 type Props = {
@@ -19,6 +20,40 @@ const strings = t(locale);
     <a class="site-header__brand" href={homePath(locale)}>{strings.brand}</a>
     <div class="site-header__actions">
       <span class="site-header__meta">{metaLabel ?? strings.siteTag}</span>
+      <nav
+        class="header-tools"
+        aria-label={locale === 'fa' ? 'خواندن و دانلود' : 'Lecture et téléchargement'}
+      >
+        <a
+          class="header-tool"
+          href={bookPath(locale)}
+          title={strings.bookMode}
+          aria-label={strings.bookMode}
+        >
+          <svg class="header-tool__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M4 5.25A2.25 2.25 0 0 1 6.25 3H11v18H6.25A2.25 2.25 0 0 1 4 18.75V5.25zm9-2.25h4.75A2.25 2.25 0 0 1 20 5.25v13.5A2.25 2.25 0 0 1 17.75 21H13V3z"
+            ></path>
+          </svg>
+          <span class="header-tool__label">{strings.bookMode}</span>
+        </a>
+        <a
+          class="header-tool"
+          href={pdfPath(locale)}
+          download={pdfFilename(locale)}
+          title={strings.downloadPdf}
+          aria-label={strings.downloadPdf}
+        >
+          <svg class="header-tool__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M12 3a1 1 0 0 1 1 1v8.6l2.3-2.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L11 12.6V4a1 1 0 0 1 1-1zm-6 15a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z"
+            ></path>
+          </svg>
+          <span class="header-tool__label">{strings.downloadPdf}</span>
+        </a>
+      </nav>
       <LangSwitcher locale={locale} alternateHrefs={alternateHrefs} />
     </div>
   </div>

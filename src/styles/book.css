@@ -1,0 +1,343 @@
+:root {
+  --ink: #1a1f1c;
+  --ink-soft: #3d4640;
+  --muted: #6b756e;
+  --paper: #fafaf8;
+  --line: rgba(26, 31, 28, 0.14);
+  --accent: #2f5d50;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-body: "Source Serif 4", "Georgia", "Noto Naskh Arabic", serif;
+  --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
+  --measure: 68ch;
+  --book-font-size: 11.5pt;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--book-font-size);
+  line-height: 1.5;
+  background: var(--paper);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+.book-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: rgba(250, 250, 248, 0.94);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.book-toolbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.book-toolbar a,
+.book-toolbar button {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.book-toolbar a:hover,
+.book-toolbar button:hover {
+  border-color: var(--accent);
+}
+
+.book-toolbar button:disabled {
+  opacity: 0.4;
+  cursor: default;
+  border-color: var(--line);
+}
+
+.book-font-controls {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.book-font-controls button {
+  min-width: 2.4rem;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.book-toolbar__icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.book-toolbar__icon-link svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.book {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.book-cover {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2.5rem;
+}
+
+.book-cover__brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2.1em;
+  font-weight: 550;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.book-cover__lede {
+  margin: 0;
+  font-size: 1.12em;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 40em;
+}
+
+.book-cover__meta {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 0.9em;
+}
+
+.book-toc {
+  margin: 0 0 3rem;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.book-toc h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.35em;
+  font-weight: 550;
+}
+
+.book-toc ol {
+  margin: 0;
+  padding-inline-start: 1.35rem;
+}
+
+.book-toc li {
+  margin: 0.35rem 0;
+}
+
+.book-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-toc a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.book-section {
+  margin: 0 0 2.5rem;
+}
+
+.book-section__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.45em;
+  font-weight: 550;
+  line-height: 1.2;
+}
+
+.book-section__meta {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 0.88em;
+}
+
+.book-body > :first-child {
+  margin-top: 0;
+}
+
+.book-body h2 {
+  margin: 1.75rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+.book-body h3 {
+  margin: 1.4rem 0 0.6rem;
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.book-body p,
+.book-body li {
+  orphans: 3;
+  widows: 3;
+}
+
+.book-body p {
+  margin: 0 0 0.9rem;
+}
+
+.book-body ul,
+.book-body ol {
+  margin: 0 0 0.9rem;
+  padding-inline-start: 1.35rem;
+}
+
+.book-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92em;
+  margin: 0 0 1rem;
+}
+
+.book-body th,
+.book-body td {
+  border: 1px solid var(--line);
+  padding: 0.35rem 0.45rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+.book-body blockquote {
+  margin: 0 0 1rem;
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.book-footer-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 48rem) {
+  .book {
+    padding-inline: 2rem;
+  }
+
+  .book-cover__brand {
+    font-size: 2.55em;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 20mm 18mm 22mm;
+}
+
+@media print {
+  :root {
+    --book-font-size: 11pt;
+    --measure: 68ch;
+  }
+
+  body {
+    background: white;
+    font-size: 11pt;
+    line-height: 1.48;
+  }
+
+  .book-toolbar {
+    display: none !important;
+  }
+
+  .book {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-cover {
+    min-height: auto;
+    page-break-after: auto;
+    break-after: auto;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    padding: 0 0 0.75rem;
+  }
+
+  .book-toc {
+    page-break-after: auto;
+    break-after: auto;
+    border-bottom: none;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Whole book flows continuously to save paper. */
+  .book-section {
+    page-break-before: auto;
+    break-before: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .book-section__title {
+    margin-top: 1.1rem;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .book-body a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .book-body a[href^="http"]::after {
+    content: none;
+  }
+
+  .book-footer-note {
+    page-break-before: avoid;
+  }
+}

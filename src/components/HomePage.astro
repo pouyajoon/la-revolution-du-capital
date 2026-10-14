@@ -5,6 +5,7 @@ import ChapterList from './ChapterList.astro';
 import type { Locale } from '../i18n/locales';
 import { homePath } from '../i18n/locales';
 import { t } from '../i18n/ui';
+import { bookPath, pdfFilename, pdfPath } from '../lib/edition';
 
 type Props = {
   locale: Locale;
@@ -74,6 +75,22 @@ const alternatePaths = {
       <p>{strings.chaptersIntro}</p>
       <ChapterList locale={locale} titles={chapterTitles ?? {}} />
 
+      <section class="book-formats" aria-label={strings.bookMode}>
+        <p>{strings.bookFormatsIntro}</p>
+        <div class="book-formats__actions">
+          <a class="button button--ghost" href={bookPath(locale)}>
+            {strings.bookMode}
+          </a>
+          <a
+            class="button button--ghost"
+            href={pdfPath(locale)}
+            download={pdfFilename(locale)}
+          >
+            {strings.downloadPdf}
+          </a>
+        </div>
+      </section>
+
       <h2 id="fabrication">{fabricationHeading}</h2>
       <p>{fabrication}</p>
     </article>
@@ -90,5 +107,23 @@ const alternatePaths = {
   .article__body h2,
   .article h2 {
     scroll-margin-top: 5rem;
+  }
+
+  .book-formats {
+    margin: 2rem 0 2.5rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .book-formats p {
+    margin: 0 0 1rem;
+    color: var(--ink-soft);
+  }
+
+  .book-formats__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 </style>
